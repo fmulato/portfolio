@@ -1,95 +1,531 @@
-<!doctype html>
-<html>
-  <head>
-    <!-- Page setup -->
-    <meta charset="utf-8">
-    <title>My Portfolio - FMM</title>
-    <meta name="description" content="A brief description of your site for search engines">
-    <meta name="author" content="Information about the author here">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <link rel="icon" type="image/png" href="favicon.png">
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- Stylesheets -->
-    <!-- Reset default styles and add support for google fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- Custom styles -->
-    <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Portfolio - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- Want to add Bootstrap? -->
-    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-  </head>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <body>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
 
-  <header id="header">
-    <h1>Fabricio Mello Mulato</h1>
+</head>
 
-    <ul class="main-menu">
-      <li><a href="#home">home</a></li>
-      <li><a href="#about">about</a></li>
-      <li><a href="#contact">contact</a></li>
-    </ul>
+<body>
 
-  </header>
-   
-    <div id="container">
-      <div class="inner">
-        <div id="content"> 
-          
-          <div id="home" class="content-region hide">
-            <h2>Home</h2>
-            <p>
-              Welcome to My Professional Portfolio<br><br>
-              Hi, I’m Fabricio Mello Mulato, a Data Scientist and Software Engineer with a strong background in auditing and financial analysis.<br><br>
-              With 18 years of experience as a State Tax Auditor in Brazil and a passion for data science, I specialize in machine learning, fraud detection,
-              and data visualization.<br><br>
-              Currently pursuing a Master’s in Software Engineering in Auckland, I am focused on applying data-driven solutions to real-world challenges. Explore my portfolio and experience to learn more about how I bridge the gap between finance, technology, and analytics.
-            </p>
-          </div>
-          
-          <div id="about" class="content-region hide">
-            <h2>About</h2>
-           <p>Who Am I?</p>
-            <p>I am a professional with a multidisciplinary background, combining finance, auditing, and data science. My expertise includes:</p>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
 
-            <ul>
-              <li>Data Analysis & Machine Learning – Fraud detection, predictive modeling, and data-driven decision-making.</li>
-              <li>Software Development – Proficient in Python, SQL, Power BI, and dashboard creation.</li>
-              <li>Auditing & Compliance – Extensive experience in financial analysis, tax compliance, and risk assessment.</li>
-              <li>Education & Research – MBA in Data Science, Master’s in Software Engineering, Industrial Engineering and years of experience as a lecturer.</li>
-            </ul>
+      <h1 class="logo"><a href="index.html">Portfolio</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Education</a></li>
+          <li><a class="nav-link scrollto " href="#work">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
-<p>With a strong analytical mindset and a passion for technology, I thrive in solving complex problems through data-driven insights.</p>
-          </div>
-          
-          <div id="contact" class="content-region hide">
-            <h2>Contact</h2>
-            <p>
-              📍 Location: Auckland, New Zealand<br>
-              📧 Email: fmulato@yahoo.com<br>
-              📞 Phone: +64 027 4625660 <br>
-              🔗 LinkedIn: <a href="https://www.linkedin.com/in/fabricio-mulato-589258/" target="_blank">linkedin.com/in/fabricio-mulato-589258</a><br>
-              <br>
-              Let’s connect! I’m open to collaborations, consulting, and research opportunities in data science, software engineering, and financial analytics.
-            </p>
-          </div>
-          
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg2.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="hero-title mb-4">I am Fabricio Mello Mulato</h1>
+          <p class="hero-subtitle"><span class="typed" data-typed-items="Background in tax auditing, data analysis, and software engineer"></span></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
         </div>
       </div>
     </div>
+  </div><!-- End Hero Section -->
 
-    <footer>  
+  <main id="main">
 
-    </footer>
-    
-    <!-- Load additional JS scripts here -->
-    <script type="text/javascript" src="script.js"></script>
-    
-  </body>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="assets/img/fabricio.webp" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p><span class="title-s">Name: </span> <span>Fabricio Mello Mulato</span></p>
+                        <p><span class="title-s">Profile: </span> <span>Software Engineer / Data Scientist</span></p>
+                        <p><span class="title-s">Email: </span> <span>fmulato@yahoo.com</span></p>
+                        <p><span class="title-s">Phone: </span> <span>+64 027 462 5660</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill-mf">
+                    <p class="title-s">Skill</p>
+                    <span>Python</span> <span class="pull-right">95%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Power BI</span> <span class="pull-right">90%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>SQL</span> <span class="pull-right">85%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Machine Learning</span> <span class="pull-right">80%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Agile Methodologies</span> <span class="pull-right">80%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>SAP Business Objects</span> <span class="pull-right">75%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        About me
+                      </h5>
+                    </div>
+                    <p class="lead">
+                      Software Engineer | Data Analyst | Visualisation Specialist | Data Scientist
+                    </p>
+                    I am a professional with 18 years of experience as a tax auditor and a strong transition into technology and software engineering.
+                    Currently, I am pursuing a Master's in Software Engineering at Yoobee College in New Zealand, focusing on data analysis, quantum computing,
+                    blockchain, cloud security, and intelligent transport systems.<br>
+
+                    My experience blends automation, statistical analysis, and machine learning, with a proven track record in creating interactive dashboards and analytical systems to support strategic decision-making.
+                    Recently, I worked on a challenging project migrating dashboards from Tableau to Power BI, consolidating processes and optimising insights for large volumes of data.
+                    </p>
+                    <p class="lead">
+                      Key Skills:</p>
+                      ✅ Data Analysis and Visualisation – Experience with Power BI, Tableau, and Python<br>
+                      ✅ Software Development – Programming in Python, SQL, and emerging technologies<br>
+                      ✅ Automation and Data Intelligence – Application of machine learning and statistics for process optimisation<br>
+                      ✅ Agile Management – Knowledge of methodologies like Scrum and Kanban<br>
+                    </p>
+                    <p class="lead"></p>
+                      I am passionate about innovation and data, always striving to turn technical challenges into strategic solutions.<br>
+                      I am open to opportunities in software engineering, data analysis, and automation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services-mf pt-5 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Education
+              </h3>
+              <p class="subtitle-a">
+                My academic jorney is a testament to my commitment to continuous learning and growth.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-database-check"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Master of Software Engineering</h2>
+                <p class="s-description text-center">
+                  Yoobee College of Creative Innovation, New Zealand.<br>
+                  (Nov 2024 – Present)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">MBA in Data Science</h2><br>
+                <p class="s-description text-center">
+                  Universidade de São Paulo (USP), Brazil<br>
+                  (January 2023 - March 2024)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-book"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Postgraduate (Lato Sensu)<br> Tax Law</h2>
+                <p class="s-description text-center">
+                   Universidade Estácio de Sá/CERS, Brazil <br>
+                  (2018 - 2020)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Master of Business Administration - MBA</h2>
+                <p class="s-description text-center">
+                  Universidade de São Paulo (USP), Brazil <br>
+                  (2000 - 2002)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-gear"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Industrial Engineering</h2> <br>
+                <p class="s-description text-center">
+                  Universidade de São Paulo (USP), Brazil<br>
+                  Bachelor  (1995 - 1999)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-binoculars"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">New Challenges</h2><br>
+                <p class="s-description text-center">
+                  Looking forward to new challenges<br><br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Counter Section ======= -->
+<div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
+  <div class="overlay-mf"></div>
+  <div class="container position-relative">
+    <div class="row justify-content-center"> <!-- Adicionado justify-content-center -->
+
+      <div class="col-sm-3 col-lg-3">
+        <div class="counter-box pt-4 pt-md-0 text-center">
+          <div class="counter-ico">
+            <span class="ico-circle"><i class="bi bi-hourglass-split"></i></span>
+          </div>
+          <div class="counter-num">
+            <p data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="counter purecounter"></p>
+            <span class="counter-text">YEARS OF EXPERIENCE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3 col-lg-3">
+        <div class="counter-box pt-4 pt-md-0 text-center">
+          <div class="counter-ico">
+            <span class="ico-circle"><i class="bi bi-mortarboard-fill"></i></span>
+          </div>
+          <div class="counter-num">
+            <p data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="counter purecounter"></p>
+            <span class="counter-text">POST GRADUATIONS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3 col-lg-3">
+        <div class="counter-box pt-4 pt-md-0 text-center">
+          <div class="counter-ico">
+            <span class="ico-circle"><i class="bi bi-globe-americas"></i></span>
+          </div>
+          <div class="counter-num">
+            <p data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="counter purecounter"></p>
+            <span class="counter-text">INTERNATIONAL EXPERIENCE</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- End Counter Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="work" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Portfolio
+              </h3>
+              <p class="subtitle-a">
+                Some project examples are shown here; however, not all can be highlighted due to confidentiality agreements, sensitive data and business secrecy.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-db.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-db.jpg" alt="" class="img-fluid" width="100%" height="80%">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Dashboard</h2>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-ml.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-ml.jpg" alt="" class="img-fluid" width="100%" height="100%">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Machine Learning</h2>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details2.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/pyhon_auto.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/pyhon_auto.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Python Automation</h2>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details3.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/sap-bi.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/sap-bi.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">SAP Business Objects</h2>
+                    </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details4.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Auditing</h2>
+                   </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details5.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-5.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Miscellaneous</h2>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details6.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+
+                  <div class="col-md-6">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        Get in Touch
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+                        Feel free to reach out to me for any inquiries, collaboration opportunities, or if you'd like to discuss potential projects. I'm always open to connecting and sharing ideas. You can contact me via email, phone or connect with me on LinkedIn.
+                        I look forward to hearing from you!
+                      </p>
+                      <ul class="list-ico">
+                        <li><span class="bi bi-geo-alt"></span> AUCKLAND, NEW ZEALAND</li>
+                        <li><span class="bi bi-phone"></span> +64 027 462 5660</li>
+                        <li><span class="bi bi-envelope"></span> fmulato@yahoo.com</li>
+                      </ul>
+                    </div>
+                    <div class="socials">
+                      <ul>
+                        <li><a href="https://www.facebook.com/fabricio.mulato"><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
+                        <li><a href="https://www.instagram.com/fabriciomulato/"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                        <li><a href="https://www.linkedin.com/in/fabricio-mulato"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>Portfolio</strong>. All Rights Reserved</p>
+            <div class="credits">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>

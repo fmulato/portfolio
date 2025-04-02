@@ -1,0 +1,161 @@
+portfolio-details2.html<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+ <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Portfolio</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html#services">Education</a></li>
+          <li><a class="nav-link scrollto " href="index.html#work">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <div class="hero hero-single route bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h2 class="hero-title mb-4">Portfolio Details</h2>
+          <ol class="breadcrumb d-flex justify-content-center">
+            <li class="breadcrumb-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="breadcrumb-item active">Portfolio Details</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/etl.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/etl2.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/etl3.jpg" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Data Science</li>
+                <li><strong>Employer</strong>: São Paulo State Treasury Department / University of São Paulo (USP)</li>
+                <li><strong>Project date</strong>: Jan 2024 - Oct 2024</li>
+                <li><strong>Challenge</strong>: Develop an automated system to extract and process invoice data (fiscal notes) to compare with taxpayer-declared information regarding the Municipal Participation Index (DIPAM). DIPAM is an important Brazilian fiscal indicator that determines tax revenue distribution among municipalities based on reported economic activity.
+                  This would be comparable to the methodology used in tax revenue allocation to local councils.</li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Automation of Fiscal Data Extraction and Analysis</h2>
+              <p>
+                Approach: </p>
+                The project implements an ETL (Extract, Transform, Load) process to automate the extraction of invoice data. The system processes multiple types of fiscal documents, aggregating information by document type, date, and municipality. Key automation steps include:
+                Extracting structured data from invoices issued across multiple sources.
+                Performing data validation and comparison against taxpayer declarations.
+                Aggregating revenue indicators at the municipal level for DIPAM analysis.
+                Implementing advanced data processing techniques to detect inconsistencies.
+                In the initial phase, the extracted data is used to compare declared versus actual invoice-reported revenues. The second phase aims to replace the taxpayer’s declaration altogether, eliminating manual submission. Taxpayers will only need to review and confirm the automatically generated figures.
+              <br><br>
+              <p>
+                Results:</p>
+                <li>Automated extraction and consolidation of tax data, reducing manual processing.</li>
+                <li>Increased accuracy in municipal revenue allocation through data-driven validation.</li>
+                <li>Laying the foundation for a fully automated compliance system, reducing taxpayer workload and improving tax transparency.</li>
+                <li>This project demonstrates how Python-based automation can enhance fiscal governance, ensuring fairer and more efficient revenue distribution.</li>
+           </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
