@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af8f1c2f-4284-43d7-b666-2dff5b0fa264" name="Changes" comment="googe analytics set up">
+    <list default="true" id="af8f1c2f-4284-43d7-b666-2dff5b0fa264" name="Changes" comment="new tab: databricks">
+      <change afterPath="$PROJECT_DIR$/assets/img/Databricks-Logo.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/databricks1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/databricks2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/databricks3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/databricks4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/work-7.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/portfolio-details7.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -298,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764131097497</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="new tab: databricks">
+      <option name="closed" value="true" />
+      <created>1766826307858</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1766826307858</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,6 +336,7 @@
     <MESSAGE value="update portfolio - sefaz" />
     <MESSAGE value="update projects - masters" />
     <MESSAGE value="googe analytics set up" />
-    <option name="LAST_COMMIT_MESSAGE" value="googe analytics set up" />
+    <MESSAGE value="new tab: databricks" />
+    <option name="LAST_COMMIT_MESSAGE" value="new tab: databricks" />
   </component>
 </project>
