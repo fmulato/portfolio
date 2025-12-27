@@ -1,0 +1,225 @@
+portfolio-details7.html<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+ <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Portfolio</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html#services">Education</a></li>
+          <li><a class="nav-link scrollto " href="index.html#work">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <div class="hero hero-single route bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h2 class="hero-title mb-4">Portfolio Details</h2>
+          <ol class="breadcrumb d-flex justify-content-center">
+            <li class="breadcrumb-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="breadcrumb-item active">Portfolio Details</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/databricks1.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/databricks2.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/databricks3.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/databricks4.png" alt="">
+                </div>
+
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+  <div class="portfolio-info">
+    <h3>Project information</h3>
+    <ul>
+      <li><strong>Category</strong>: Data Engineering & Time Series Forecasting</li>
+      <li><strong>Platform</strong>: Databricks Lakehouse</li>
+      <li><strong>Project type</strong>: Academic / Professional Portfolio</li>
+      <li><strong>Scope</strong>: End-to-end FX forecasting pipeline with validation</li>
+    </ul>
+  </div>
+
+  <div class="portfolio-description">
+    <h2>FX Lakehouse Forecasting</h2>
+
+    <p><strong>Overview:</strong></p>
+    <p>
+      This project implements an end-to-end Foreign Exchange (FX) forecasting solution
+      using a Lakehouse architecture on Databricks. The pipeline ingests historical FX data
+      via API, processes it through Bronze, Silver, and Gold layers, and applies time series
+      models to generate six-month forecasts with full validation.
+    </p>
+
+    <p><strong>Objectives:</strong></p>
+    <ul>
+      <li>Design a scalable FX data pipeline using Delta Lake</li>
+      <li>Model trend and seasonality in historical FX rates</li>
+      <li>Generate short-term forecasts (6 months ahead)</li>
+      <li>Validate models using industry-standard metrics</li>
+      <li>Produce analytics-ready datasets for BI tools</li>
+    </ul>
+
+    <p><strong>Architecture:</strong></p>
+    <ul>
+      <li><strong>Bronze</strong>: Raw FX rates ingested from Alpha Vantage API</li>
+      <li><strong>Silver</strong>: Cleaned and standardised FX time series</li>
+      <li><strong>Gold</strong>: Curated datasets optimised for ML and forecasting</li>
+    </ul>
+
+    <p><strong>Currency Pairs:</strong></p>
+    <ul>
+      <li>USD → BRL</li>
+      <li>USD → NZD</li>
+      <li>BRL → NZD (including synthetic reconstruction via USD pivot)</li>
+    </ul>
+
+    <p><strong>Modelling Approach:</strong></p>
+    <ul>
+      <li>ARIMA and SARIMAX models with weekly seasonality</li>
+      <li>Time-based train/test split</li>
+      <li>Forecast horizon of approximately 180 days</li>
+    </ul>
+
+    <p><strong>Results:</strong></p>
+    <ul>
+      <li>All models achieved MAPE below 3.5%</li>
+      <li>Strong performance across different FX dynamics</li>
+      <li>Validated forecasts aligned with real historical behaviour</li>
+    </ul>
+
+    <p><strong>Outputs:</strong></p>
+    <ul>
+      <li>Delta tables for historical, forecasted and validation data</li>
+      <li>Forecast plots with confidence intervals</li>
+      <li>Datasets ready for Power BI and Tableau integration</li>
+    </ul>
+
+    <p><strong>Technology Stack:</strong></p>
+    <ul>
+      <li>Databricks, Apache Spark, Delta Lake</li>
+      <li>Python, Pandas, NumPy</li>
+      <li>Statsmodels (ARIMA / SARIMAX)</li>
+      <li>Alpha Vantage API</li>
+    </ul>
+
+    <p><strong>Key Learnings:</strong></p>
+    <ul>
+      <li>Practical application of Lakehouse architecture</li>
+      <li>Correct temporal validation for time series forecasting</li>
+      <li>Integration of data engineering and statistical modelling</li>
+      <li>Design of auditable, production-oriented pipelines</li>
+    </ul>
+
+    <p><em>Disclaimer: This project is for educational and analytical purposes only and does not constitute financial advice.</em></p>
+
+    <p><em>
+    Full source code available on
+    <a href="https://github.com/fmulato/Databricks" target="_blank" rel="noopener noreferrer">
+      https://github.com/fmulato/Databricks</a>
+  </em></p>
+
+  </div>
+</div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
