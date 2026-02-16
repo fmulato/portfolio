@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Snowflake Data Pipeline</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <h1 class="logo"><a href="index.html">Portfolio</a></h1>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
+        <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+        <li><a class="nav-link scrollto" href="index.html#services">Education</a></li>
+        <li><a class="nav-link scrollto " href="index.html#work">Portfolio</a></li>
+        <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </div>
+</header><!-- End Header -->
+
+<div class="hero hero-single route bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
+  <div class="overlay-mf"></div>
+  <div class="hero-content display-table">
+    <div class="table-cell">
+      <div class="container">
+        <h2 class="hero-title mb-4">Snowflake Data Pipeline</h2>
+        <ol class="breadcrumb d-flex justify-content-center">
+          <li class="breadcrumb-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item active">Project Details</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ======= Portfolio Details Section ======= -->
+  <section id="portfolio-details" class="portfolio-details">
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-8">
+          <div class="portfolio-details-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+
+              <div class="swiper-slide">
+                <img src="assets/img/snowflake_1.png" alt="Snowflake raw table">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets/img/snowflake_2.png" alt="Power Query Star Schema">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets/img/snowflake_git.png" alt="Power BI dashboard">
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="portfolio-info">
+            <h3>Project Information</h3>
+            <ul>
+              <li><strong>Category</strong>: Data Engineering & Business Intelligence</li>
+              <li><strong>Platform</strong>: Snowflake, Power BI</li>
+              <li><strong>Project Type</strong>: Academic / Professional Portfolio</li>
+              <li><strong>Scope</strong>: End-to-end data pipeline: Kaggle → Snowflake → Power BI</li>
+            </ul>
+          </div>
+
+          <div class="portfolio-description">
+            <h2>End-to-End Snowflake Pipeline</h2>
+
+            <p><strong>Overview:</strong></p>
+            <p>
+              This project implements a complete data pipeline ingesting public datasets from Kaggle,
+              storing them in Snowflake raw tables, transforming into a Star Schema via Power Query,
+              and generating dashboards in Power BI for analytical insights.
+            </p>
+
+            <p><strong>Objectives:</strong></p>
+            <ul>
+              <li>Design a scalable ETL pipeline with Python and Snowflake</li>
+              <li>Create a dimensional Star Schema for reporting</li>
+              <li>Build interactive dashboards in Power BI</li>
+              <li>Ensure data accuracy and consistency through validation checks</li>
+              <li>Provide analytics-ready datasets for business decisions</li>
+            </ul>
+
+            <p><strong>Architecture:</strong></p>
+            <ul>
+              <li><strong>Extraction:</strong> Kaggle datasets downloaded via Python scripts</li>
+              <li><strong>Loading:</strong> Raw tables in Snowflake (ANALYTICS_REPO schema)</li>
+              <li><strong>Transformation:</strong> Power Query creates dimensions and fact tables (Star Schema)</li>
+              <li><strong>Visualization:</strong> Power BI dashboards consuming the Star Schema</li>
+            </ul>
+
+            <p><strong>Fact & Dimension Tables:</strong></p>
+            <ul>
+              <li>Fact_Sales</li>
+              <li>Dim_Date</li>
+              <li>Dim_Customer</li>
+              <li>Dim_Product</li>
+              <li>Dim_AgeGroup</li>
+            </ul>
+
+            <p><strong>Technology Stack:</strong></p>
+            <ul>
+              <li>Kaggle, Python, Snowflake, Power Query, Power BI</li>
+              <li>Pandas, json, kagglehub</li>
+              <li>Data validation and version control (Git/GitHub)</li>
+            </ul>
+
+            <p><strong>Key Learnings:</strong></p>
+            <ul>
+              <li>End-to-end data engineering workflow</li>
+              <li>Dimensional modelling for BI</li>
+              <li>Data validation and accuracy checks</li>
+              <li>Building professional dashboards for decision-making</li>
+            </ul>
+
+            <p><em>Disclaimer: This project is for educational and analytical purposes only.</em></p>
+
+            <p><em>
+            Full source code available on
+            <a href="https://github.com/fmulato/SNOWFLAKE_PROJECT" target="_blank" rel="noopener noreferrer">
+              https://github.com/fmulato/SNOWFLAKE_PROJECT</a>
+            </em></p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End Portfolio Details Section -->
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="copyright-box">
+          &copy; 2026 Snowflake Project
+        </div>
+      </div>
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/typed.js/typed.umd.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
