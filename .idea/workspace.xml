@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af8f1c2f-4284-43d7-b666-2dff5b0fa264" name="Changes" comment="new tab: databricks">
-      <change afterPath="$PROJECT_DIR$/portfolio-details8.html" afterDir="false" />
+    <list default="true" id="af8f1c2f-4284-43d7-b666-2dff5b0fa264" name="Changes" comment="new tab: snowflake">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-details8.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-details8.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,7 +314,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766827524800</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="new tab: snowflake">
+      <option name="closed" value="true" />
+      <created>1771218663431</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1771218663431</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,6 +347,7 @@
     <MESSAGE value="update projects - masters" />
     <MESSAGE value="googe analytics set up" />
     <MESSAGE value="new tab: databricks" />
-    <option name="LAST_COMMIT_MESSAGE" value="new tab: databricks" />
+    <MESSAGE value="new tab: snowflake" />
+    <option name="LAST_COMMIT_MESSAGE" value="new tab: snowflake" />
   </component>
 </project>

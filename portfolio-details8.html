@@ -107,7 +107,7 @@
             <p><strong>Overview:</strong></p>
             <p>
               This project implements a complete data pipeline ingesting public datasets from Kaggle,
-              storing them in Snowflake raw tables, transforming into a Star Schema via Power Query,
+              storing them in Snowflake raw tables, transforming into a Star Schema via Snowflake views and Power Query,
               and generating dashboards in Power BI for analytical insights.
             </p>
 
@@ -124,7 +124,7 @@
             <ul>
               <li><strong>Extraction:</strong> Kaggle datasets downloaded via Python scripts</li>
               <li><strong>Loading:</strong> Raw tables in Snowflake (ANALYTICS_REPO schema)</li>
-              <li><strong>Transformation:</strong> Power Query creates dimensions and fact tables (Star Schema)</li>
+              <li><strong>Transformation:</strong> Snowflake views create dimensions and fact tables (Star Schema)</li>
               <li><strong>Visualization:</strong> Power BI dashboards consuming the Star Schema</li>
             </ul>
 
@@ -152,12 +152,65 @@
               <li>Building professional dashboards for decision-making</li>
             </ul>
 
-            <p><em>Disclaimer: This project is for educational and analytical purposes only.</em></p>
+            <!-- New Section: Views vs Tables -->
+            <p><strong>Comparison of Transformation Approaches:</strong></p>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Approach</th>
+                  <th>Advantages</th>
+                  <th>Disadvantages</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Snowflake Views</strong></td>
+                  <td>
+                    - No storage duplication, lightweight for static datasets<br>
+                    - Easy to maintain and adjust logic without reloading data<br>
+                    - Ideal for datasets without incremental updates
+                  </td>
+                  <td>
+                    - Slightly slower for very large queries<br>
+                    - Not suitable for frequently updated transactional data<br>
+                    - Limited optimization for complex joins or aggregations
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Snowflake Tables</strong></td>
+                  <td>
+                    - Persistent storage, optimized for large-scale reporting<br>
+                    - Supports incremental loading and indexes<br>
+                    - Best for frequently updated or transactional datasets
+                  </td>
+                  <td>
+                    - Requires storage space and management<br>
+                    - Updates require ETL jobs or scripts<br>
+                    - Less flexible for rapid schema changes
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Power Query (Desktop / ETL)</strong></td>
+                  <td>
+                    - Very user-friendly, visual interface<br>
+                    - Quick prototyping and column type adjustments<br>
+                    - Good for small/medium static datasets
+                  </td>
+                  <td>
+                    - Limited scalability for large datasets<br>
+                    - Local processing may be slower<br>
+                    - Transformations tied to Excel/Power BI environment
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p><em>Note:</em> In this project, a <strong>Snowflake view</strong> was chosen instead of a table because the dataset is static and does not require incremental updates. This allows for a lighter, easier-to-maintain solution without unnecessary storage duplication, while still enabling Star Schema transformation for Power BI dashboards.</p>
 
             <p><em>
-            Full source code available on
-            <a href="https://github.com/fmulato/SNOWFLAKE_PROJECT" target="_blank" rel="noopener noreferrer">
-              https://github.com/fmulato/SNOWFLAKE_PROJECT</a>
+              Full source code available on
+              <a href="https://github.com/fmulato/SNOWFLAKE_PROJECT" target="_blank" rel="noopener noreferrer">
+                https://github.com/fmulato/SNOWFLAKE_PROJECT</a>
             </em></p>
 
           </div>
