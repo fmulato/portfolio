@@ -1460,3 +1460,11 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
+
+/* Reduce font size for all tables */
+table.table,
+table.table-bordered,
+table.table-striped,
+table.table-hover {
+  font-size: 10px; /* ou small, , 0.8rem, conforme desejar */
+}
