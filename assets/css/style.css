@@ -1469,3 +1469,9 @@ table.table-hover {
   font-size: 10px; /* ou small, , 0.8rem, conforme desejar */
 }
 
+/* Ajuste paginação do portfolio */
+.portfolio-details-slider {
+  position: relative;
+}
+
+
